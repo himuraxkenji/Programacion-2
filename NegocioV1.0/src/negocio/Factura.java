@@ -8,9 +8,6 @@ public class Factura {
 	private String fecha;
 	private Cliente miCliente;
 	
-	private List<Producto> productos = new ArrayList<Producto>();
-	
-	
 	public Factura(Cliente miCliente, String pFecha) {
 		this.miCliente = miCliente;
 		this.fecha = pFecha;
@@ -39,14 +36,12 @@ public class Factura {
 		
 		if (misItems.isEmpty()) {
 			misItems.add(iAux);
-			productos.add(miProducto);
+			return true;
 		}
 		
 		for (Item item : misItems) {
-			for (Producto producto : productos) {
-				if (producto.equals(miProducto)) {
-					item.getSubtotal(fecha)
-				}
+			if (item.equals(miProducto)) {
+					return false;
 			}
 		}
 		
@@ -54,22 +49,58 @@ public class Factura {
 		return true;
 	}
 	
-	/*
+	
 	public boolean removeItem(Producto miProducto) {
 		
+		if (misItems.isEmpty()) {
+			System.out.println("No hay productos que borrar.");
+			return false;
+		}
+		
+		
 		for (int i = 0; i < misItems.size(); i++) {
-			if () {
-				System.out.println("Holu ;");
+			if (misItems.equals(miProducto)) {
+				misItems.remove(miProducto);
+				return true;
 			}
 		}
 		
-		return misItems.contains(miProducto);
+		System.out.println("El producto no esta en la lista");
+		return false;
 	}
-*/
+
 	@Override
 	public String toString() {
 		return "Factura [misItems=" + misItems + ", fecha=" + fecha + ", miCliente=" + miCliente + "]";
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Factura other = (Factura) obj;
+		if (fecha == null) {
+			if (other.fecha != null)
+				return false;
+		} else if (!fecha.equals(other.fecha))
+			return false;
+		if (miCliente == null) {
+			if (other.miCliente != null)
+				return false;
+		} else if (!miCliente.equals(other.miCliente))
+			return false;
+		if (misItems == null) {
+			if (other.misItems != null)
+				return false;
+		} else if (!misItems.equals(other.misItems))
+			return false;
+		return true;
+	}
+	
 	
 	
 	

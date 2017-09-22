@@ -30,8 +30,6 @@ public class Item {
 		if (getClass() != obj.getClass())
 			return false;
 		Item other = (Item) obj;
-		if (cantidad != other.cantidad)
-			return false;
 		if (miProducto == null) {
 			if (other.miProducto != null)
 				return false;
