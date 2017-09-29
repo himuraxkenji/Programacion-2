@@ -1,0 +1,47 @@
+a) ¿Qué es un literal?
+	Un literal es una notacion para representar un valor fijo.
+	En contraste con los literales se encuentran las variables
+	y las constantes. Los literales son utilizados normalmente
+	para inicializar variables.
+	
+b) ¿Cómo se especifica un literal numérico de tipo float?
+	Se especifica de la siguiente forma:
+		2.718F
+c) 	Una clase que pertenezca a una jerarquía de herencia cuya base sea la clase Exception:
+	¿puede ser abstracta?. Justifique su respuesta.
+	No se puede ya que una clase que Herede de exceptions siempre 
+	debe devolver una respuesta a los metodos que la usen.
+	Cuando se usa thrown se crea una instancia del objeto donde
+	obtenemos un valor para definir el tipo de error que tenemos
+	y una clase abstract no se puede instanciar.
+
+d) 	En base a las distintas corridas efectuadas con anterioridad explique cuando se ejecutan las
+	instrucciones: (1) dentro del bloque “try”, (2) dentro del bloque “catch” y (3) dentro del
+	bloque “finally”. Explique qué ocurre si hay más de un catch. Explique porque importa el
+	orden de los distintos catch. 
+	
+	En el bloque "try" se ejecuta el posible codigo que puede generar un error,
+	si el throws en su interior nos arroja un error y nos dice el tipo de excepcion
+	a tratar en el bloque catch si es que los catch declarados poseen la excepcion a tratar.
+	El codigo que se encuentra dentro de finally halla ocurrido una excepcion o no siempre lo 
+	ejecuta.
+	
+Actividad 2
+
+a) 	Si un constructor arroja una excepción: ¿Se llega a construir el objeto? Pruebe llamando a
+	un método del objeto en el finally.
+	No no se llega a construir, ya que todo el codigo encerrado en try es probado y 
+	luego se lo pasa a catch para que resuelva la excepcion, no se crea el objeto de 
+	tipo triangulo.
+
+b)	En base a sus observaciones: ¿cuál o cuáles deberían ser la/s finalidad/es del código
+	colocado en el bloque “catch”?. ¿Y en el bloque“finally”?.
+	El codigo colocado en el bloque catch es dedicado a reparar un error que se genero en el
+	bloque try.
+	El codigo colocado en el bloque finally seria mas dedicado a liberar recursos y ejecutar
+	algo que sea independiente del lo que paso en try.
+	
+c) 	¿Por qué las distintas corridas del Test generan distintos mensajes de error si solo se
+	capturan excepciones de tipo “TrianguloMalFormadoException”?
+	
+	 
