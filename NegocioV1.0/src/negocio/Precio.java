@@ -9,12 +9,35 @@ public class Precio {
 		
 		this.valor = valor;
 		
-		if (Integer.parseInt(fecha.substring(0, 4)) == 0  ) 
-			throw new ValidaFechaException("El dia no puede ser 0");
-		}else{
-			if (fecha.substring(3, 4) != 0) {
-			
+		if (fecha.substring(4, 5) != "-" || fecha.substring(7, 8) != "-"){
+			throw new ValidaFechaException("El año no es valido");
+		}else if (Integer.parseInt(fecha.substring(0, 4)) < 2017  )  {
+				throw new ValidaFechaException("Formato no valido");
+		}else if(Integer.parseInt(fecha.substring(5, 7) )<= 0 || Integer.parseInt(fecha.substring(5, 7)) > 12  ) {
+				throw new ValidaFechaException("Mes fuera de rango");
+		}else {
+			switch(Integer.parseInt(fecha.substring(5, 7) )) {
+				case 1:case 3:case 5: case 7: case 8: case 10: case 12:
+					if (Integer.parseInt(fecha.substring(8, 10)) > 31|| Integer.parseInt(fecha.substring(8, 10)) <= 0){
+						throw new ValidaFechaException("Dia fuera de rango");
+					}
+					break;
+				case 4: case 6: case 9: case 11:
+					if (Integer.parseInt(fecha.substring(8, 10)) > 30|| Integer.parseInt(fecha.substring(8, 10)) <= 0){
+						throw new ValidaFechaException("Dia fuera de rango");
+					}
+					break;
+				case 2:
+					if (bisiesto(Integer.parseInt(fecha.substring(0, 4))) && Integer.parseInt(fecha.substring(8, 10)) > 29|| Integer.parseInt(fecha.substring(8, 10)) <= 0 ){
+						throw new ValidaFechaException("Dia fuera de rango");
+					}
+					else if (Integer.parseInt(fecha.substring(8, 10)) > 28|| Integer.parseInt(fecha.substring(8, 10)) <= 0) {
+						throw new ValidaFechaException("Dia fuera de rango");
+					}
 			}
+				//if(bisiesto(2017) && Integer.parseInt(fecha.substring(8, 10)) > 29 || Integer.parseInt(fecha.substring(8, 10)) < 0)
+		}
+		
 		
 		this.fecha = fecha;
 		
@@ -33,5 +56,7 @@ public class Precio {
 		return "\nPrecio\n\tValor = " + valor + "\n\tFecha = " + fecha;
 	}
 	
-	
+	private boolean bisiesto(int year) {
+	    return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+	}
 }

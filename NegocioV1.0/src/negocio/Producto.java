@@ -16,7 +16,7 @@ public abstract class Producto {
 		this.nombre = nombre;
 	}
 	
-	public boolean addPrecio(double valor, String fecha) {
+	public boolean addPrecio(double valor, String fecha) throws ExcepcionesNegocio {
 		
 		if (misPrecios.isEmpty() || comparaFecha(fecha)) {
 			misPrecios.add(new Precio(valor, fecha));
