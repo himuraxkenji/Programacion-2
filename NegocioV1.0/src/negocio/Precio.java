@@ -7,7 +7,9 @@ public class Precio {
 	
 	public Precio(double valor, String fecha)throws ExcepcionesNegocio{
 		
-		this.valor = valor;
+		if (valor <= 0) {
+			throw new PrecioErroneoException("Precio Igual o menor a 0");
+		}
 		
 		if (fecha.substring(4, 5) != "-" || fecha.substring(7, 8) != "-"){
 			throw new ValidaFechaException("El año no es valido");
@@ -38,7 +40,7 @@ public class Precio {
 				//if(bisiesto(2017) && Integer.parseInt(fecha.substring(8, 10)) > 29 || Integer.parseInt(fecha.substring(8, 10)) < 0)
 		}
 		
-		
+		this.valor = valor;
 		this.fecha = fecha;
 		
 	}
