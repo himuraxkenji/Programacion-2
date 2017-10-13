@@ -1,97 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="negocio.Precio" project="NegocioV2.0" file="/NegocioV2.0/src/negocio/Precio.java" 
+  <class id="1" language="java" name="negocio.Cliente" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/Cliente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="149" width="163" x="1561" y="281"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="negocio.Item" project="NegocioV1.0" file="/NegocioV1.0/src/negocio/Item.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="603" y="946"/>    
+    <position height="149" width="151" x="1370" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="tests.TestZapato2" project="NegocioV2.0" 
-    file="/NegocioV2.0/src/tests/TestZapato2.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="143" y="797"/>    
+  <class id="3" language="java" name="negocio.Precio" project="NegocioV1.0" file="/NegocioV1.0/src/negocio/Precio.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="203" width="166" x="1117" y="911"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="negocio.Producto" project="NegocioV2.0" 
-    file="/NegocioV2.0/src/negocio/Producto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="829" y="943"/>    
+  <class id="4" language="java" name="negocio.ValidaFechaException" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/ValidaFechaException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="168" x="110" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="4" language="java" name="negocio.Genero" project="NegocioV2.0" 
-    file="/NegocioV2.0/src/negocio/Genero.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="440" y="1309"/>    
+  <class id="5" language="java" name="negocio.Cuenta" project="NegocioV1.0" file="/NegocioV1.0/src/negocio/Cuenta.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="87" x="307" y="20"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="negocio.ValidaPrecioException" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/ValidaPrecioException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="168" x="318" y="281"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="negocio.ExcepcionesNegocio" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/ExcepcionesNegocio.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="163" x="631" y="20"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="8" language="java" name="negocio.Genero" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/Genero.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="131" width="119" x="1323" y="1154"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="5" language="java" name="tests.TestZapato" project="NegocioV2.0" 
-    file="/NegocioV2.0/src/tests/TestZapato.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="274" y="797"/>    
+  <class id="9" language="java" name="negocio.ValidaNombreException" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/ValidaNombreException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="175" x="526" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="negocio.Zapato" project="NegocioV2.0" file="/NegocioV2.0/src/negocio/Zapato.java" 
+  <class id="10" language="java" name="negocio.ValidaTalleException" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/ValidaTalleException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="159" x="741" y="281"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="negocio.Producto" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/Producto.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="401" width="188" x="1342" y="470"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="negocio.ValidaCodigoException" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/ValidaCodigoException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="171" x="940" y="281"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="negocio.Cartera" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/Cartera.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="149" width="164" x="1560" y="911"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="negocio.ValidaVolumenException" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/ValidaVolumenException.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="77" width="179" x="1151" y="281"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="negocio.Zapato" project="NegocioV1.0" file="/NegocioV1.0/src/negocio/Zapato.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="677" y="1308"/>    
+    <position height="167" width="197" x="1323" y="911"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="negocio.Cartera" project="NegocioV2.0" 
-    file="/NegocioV2.0/src/negocio/Cartera.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1004" y="1300"/>    
+  <class id="16" language="java" name="negocio.Factura" project="NegocioV1.0" 
+    file="/NegocioV1.0/src/negocio/Factura.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="221" width="173" x="1465" y="20"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="8">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="9" name="misPrecios"/>      
-      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+  <generalization id="17">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="20">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="21">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="22" name="miGenero"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="24">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="25" name="miProducto"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="28">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="29" name="miCliente"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="11">    
-    <bendpoint x="1001" y="1169"/>    
-    <bendpoint x="829" y="1173"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="3"/>  
+  <generalization id="31">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
   </generalization>  
-  <generalization id="12">    
-    <bendpoint x="678" y="1177"/>    
-    <bendpoint x="831" y="1176"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="3"/>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="11"/>  
   </generalization>  
-  <association id="13">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="14" name="miGenero"/>      
-      <multiplicity id="15" minimum="0" maximum="1"/>    
+  <association id="33">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="34" name="misPrecios"/>      
+      <multiplicity id="35" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="37" name="misItems"/>      
+      <multiplicity id="38" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

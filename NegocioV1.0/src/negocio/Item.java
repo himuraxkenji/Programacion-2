@@ -5,20 +5,33 @@ public class Item {
 	private Producto miProducto;
 	private int cantidad;
 	
-	public Item(Producto miProducto, int cantidad) {
+	public Item(Producto miProducto, int cantidad) throws ExcepcionesNegocio{
 		
-		this.miProducto = miProducto;
+		if (cantidad <= 0 ) 
+			throw new ValidaCantidadException("Cantidad no valida");
+			
 		this.cantidad = cantidad;
+		this.miProducto = miProducto;
+		
 	}
 	
-	public double getSubtotal(String fecha) {
+	public double getSubtotal(String fecha) throws ExcepcionesNegocio {
 		
 		return miProducto.getPrecio(fecha) * cantidad;
+		
 	}
 
 	@Override
 	public String toString() {
 		return "\nItem\nMi Producto = " + miProducto + "\nCantidad = " + cantidad ;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((miProducto == null) ? 0 : miProducto.hashCode());
+		return result;
 	}
 
 	@Override

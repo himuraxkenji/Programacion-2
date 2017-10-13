@@ -4,10 +4,15 @@ public class Cartera extends Producto{
 	
 	private double volumen;
 	
-	public Cartera(double volumen, String codigo, String nombre) {
-		this.volumen = volumen;
+	public Cartera(double volumen, String codigo, String nombre) throws ExcepcionesNegocio{
+		
+		if (volumen <= 0) 
+			throw new ValidaVolumenException("Volumen no valido");
+		
 		this.setCodigo(codigo);
 		this.setNombre(nombre);
+		this.volumen = volumen;
+		
 	}
 	
 	public double getVolumen() {
@@ -19,8 +24,9 @@ public class Cartera extends Producto{
 		return "\nCartera\nVolumen = " + volumen + super.toString();
 	}
 
+	
+	@Override
 	public boolean equals(Object obj) {
-		super.equals(obj);
 		if (this == obj)
 			return true;
 		if (!super.equals(obj))
@@ -33,6 +39,7 @@ public class Cartera extends Producto{
 		return true;
 	}
 	
+	// Metodos Privados
 	
 	
 	

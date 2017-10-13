@@ -5,12 +5,16 @@ public class Zapato extends Producto{
 	private Genero miGenero;
 	private String talle;
 	
-	public Zapato(Genero miGenero, String talle, String codigo, String nombre){
+	public Zapato(Genero miGenero, String talle, String codigo, String nombre)throws ExcepcionesNegocio{
+				
+		if (Integer.parseInt(talle) < 38 || Integer.parseInt(talle) > 45) 
+			throw new ValidaTalleException("Talle Fuera de Rango");
 		
-		this.miGenero = miGenero;
-		this.talle = talle;
 		this.setCodigo(codigo);
 		this.setNombre(nombre);
+		this.miGenero = miGenero;
+		this.talle = talle;
+		
 	}
 	
 	public Genero getMiGenero() {
@@ -45,7 +49,4 @@ public class Zapato extends Producto{
 			return false;
 		return true;
 	}
-	
-	
-	
 }
